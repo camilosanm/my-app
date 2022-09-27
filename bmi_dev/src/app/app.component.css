@@ -1,0 +1,10 @@
+.main{
+    background: url('../img/mundo2.png') no-repeat;
+    width: auto;
+    height: 800px;
+    background-size: cover;
+}
+
+#welcome{
+    color: white;
+}
