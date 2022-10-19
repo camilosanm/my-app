@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { AuthService } from '@auth/services/authService';
 import { ACTIONS } from '@shared/constants/constants';
 import { ApiError, User, UserCredentials } from '@supabase/supabase-js';
+
 export interface OptionsForm {
   id: string;
   label: string;
@@ -48,8 +49,7 @@ export class FormComponent implements OnInit {
       if (result.email) {
         this.redirectUser();
       } else {
-        //TODO notification
-        console.log('Notification');
+        alert('Notification: ' + result.message);
       }
     } catch (error) {
       console.log(error);

@@ -1,0 +1,32 @@
+<section>
+    <div class="text-center">
+        <h3 class="h3">Sign Up</h3>
+    </div>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="confirmPassword1" class="form-label">Confirm Password</label>
+            <input formControlName="confirmPass" type="password" class="form-control" id="confirmPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </div>
+       <!--  <div class="text-center mt-5">
+            <ng-container *ngIf="options.id === signIn; else showSignInTemplate">
+                <a [routerLink]="['/sign-up']" class="text-black">Create an account!</a>
+            </ng-container>
+        </div> -->
+    </form>
+</section>
