@@ -5,7 +5,6 @@ import { SignInRoutingModule } from './sign-in-routing.module';
 import { SignInComponent } from './sign-in.component';
 import { FormModule } from '@auth/form/form.module';
 
-
 @NgModule({
   declarations: [
     SignInComponent
